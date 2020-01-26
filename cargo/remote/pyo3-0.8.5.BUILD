@@ -38,15 +38,15 @@ rust_library(
         "@raze__inventory__0_1_5//:inventory",
         "@raze__libc__0_2_66//:libc",
         "@raze__num_traits__0_2_11//:num_traits",
-        "@raze__parking_lot__0_10_0//:parking_lot",
         "@raze__paste__0_1_6//:paste",
-        "@raze__pyo3cls__0_9_0_alpha_1//:pyo3cls",
+        "@raze__pyo3cls__0_8_5//:pyo3cls",
+        "@raze__spin__0_5_2//:spin",
         "@raze__unindent__0_1_5//:unindent",
     ],
     rustc_flags = [
         "--cap-lints=allow",
     ],
-    version = "0.9.0-alpha.1",
+    version = "0.8.5",
     crate_features = [
         "default",
         "extension-module",

@@ -32,14 +32,14 @@ rust_library(
     srcs = glob(["**/*.rs"]),
     deps = [
         "@raze__proc_macro2__1_0_8//:proc_macro2",
-        "@raze__pyo3_derive_backend__0_9_0_alpha_1//:pyo3_derive_backend",
+        "@raze__pyo3_derive_backend__0_8_5//:pyo3_derive_backend",
         "@raze__quote__1_0_2//:quote",
         "@raze__syn__1_0_14//:syn",
     ],
     rustc_flags = [
         "--cap-lints=allow",
     ],
-    version = "0.9.0-alpha.1",
+    version = "0.8.5",
     crate_features = [
     ],
 )

@@ -12,7 +12,7 @@ package(default_visibility = [
 ])
 
 licenses([
-  "notice", # "MIT,Apache-2.0"
+  "notice", # "MIT"
 ])
 
 load(
@@ -23,10 +23,10 @@ load(
 )
 
 
-# Unsupported target "build-script-build" with type "custom-build" omitted
+# Unsupported target "debug" with type "example" omitted
 
 rust_library(
-    name = "winapi",
+    name = "spin",
     crate_root = "src/lib.rs",
     crate_type = "lib",
     edition = "2015",
@@ -36,15 +36,8 @@ rust_library(
     rustc_flags = [
         "--cap-lints=allow",
     ],
-    version = "0.3.8",
+    version = "0.5.2",
     crate_features = [
-        "errhandlingapi",
-        "handleapi",
-        "minwindef",
-        "ntstatus",
-        "winbase",
-        "winerror",
-        "winnt",
     ],
 )
 

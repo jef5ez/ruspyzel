@@ -12,7 +12,7 @@ package(default_visibility = [
 ])
 
 licenses([
-  "restricted", # "BSD-2-Clause"
+  "notice", # "Apache-2.0"
 ])
 
 load(
@@ -25,21 +25,21 @@ load(
 
 
 rust_library(
-    name = "cloudabi",
-    crate_root = "cloudabi.rs",
+    name = "pyo3_derive_backend",
+    crate_root = "src/lib.rs",
     crate_type = "lib",
-    edition = "2015",
+    edition = "2018",
     srcs = glob(["**/*.rs"]),
     deps = [
-        "@raze__bitflags__1_2_1//:bitflags",
+        "@raze__proc_macro2__1_0_8//:proc_macro2",
+        "@raze__quote__1_0_2//:quote",
+        "@raze__syn__1_0_14//:syn",
     ],
     rustc_flags = [
         "--cap-lints=allow",
     ],
-    version = "0.0.3",
+    version = "0.8.5",
     crate_features = [
-        "bitflags",
-        "default",
     ],
 )
 
