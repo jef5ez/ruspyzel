@@ -14,6 +14,6 @@ rust_library(
 
 rust_binary(
     name = "day2",
-    srcs = ["src/day2.rs"],
+    srcs = ["src/main.rs"],
     deps = [":intcoderpreter"],
 )

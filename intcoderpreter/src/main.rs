@@ -1,8 +1,8 @@
-extern crate intcode_lib;
+extern crate intcoderpreter;
 
-use intcode_lib::intcoder::run_int_code;
+use intcoderpreter::intcoder::run_int_code;
 use std::fs;
-use std::path::PathBuf;
+//use std::path::PathBuf;
 
 fn main() {
     let path = "/home/joseph/src/advent2019/src/main/resources/day2.txt";

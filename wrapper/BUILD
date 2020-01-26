@@ -9,5 +9,8 @@ rust_library(
         "default",
     ],
     crate_type = "cdylib",
-    deps = ["//intcoder/cargo:pyo3"],
+    deps = [
+        "//cargo:pyo3",
+        "//intcoderpreter",
+    ],
 )
