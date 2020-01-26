@@ -1,0 +1,6 @@
+# this was just for running rust without bazel
+[workspace]
+members = [
+    "intcoderpreter",
+    "intcodewrapper",
+]
