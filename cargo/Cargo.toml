@@ -3,7 +3,7 @@
 # if that fails make sure to have openssl installed:
 # `sudo apt-get install pkg-config libssl-dev`
 [package]
-name = "intcoder"
+name = "intcoder_deps"
 version = "0.1.0"
 authors = ["joseph <jefeatherston@gmail.com>"]
 edition = "2018"
@@ -21,7 +21,6 @@ features = ["extension-module"]
 [raze]
 # The WORKSPACE relative path to the Cargo.toml working directory.
 workspace_path = "//cargo"
-genmode = "Remote"
 target = "x86_64-unknown-linux-gnu"
 
 [raze.crates.proc-macro2.'1.0.8']

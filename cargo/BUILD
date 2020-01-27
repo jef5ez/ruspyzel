@@ -10,5 +10,5 @@ licenses([
 ])
 alias(
     name = "pyo3",
-    actual = "@raze__pyo3__0_8_5//:pyo3",
+    actual = "//cargo/vendor/pyo3-0.8.5:pyo3",
 )
